@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jon/CLionProjects/MyService/main.cpp
+iostream
+-
+src/serviceSocket.h
+/home/jon/CLionProjects/MyService/src/serviceSocket.h
+
+/home/jon/CLionProjects/MyService/src/serviceSocket.h
+
