@@ -17,7 +17,7 @@ serviceSocket::~serviceSocket() {close(s_socket);}
 void serviceSocket::init() {
     s_socket = socket(AF_INET, SOCK_STREAM, 0);
     if (s_socket == -1)
-        std::cout << "unkown error,give over!" << std::endl;
+        std::cout << "1unkown error,give over!" << std::endl;
 
     _bind();
 }
@@ -27,16 +27,20 @@ void serviceSocket::_bind() {
     sockadd_.sin_family = AF_INET;
     sockadd_.sin_addr.s_addr = htonl(INADDR_ANY);
     sockadd_.sin_port = htons(port);
-    if (bind(s_socket, (struct sockaddr *) &sockadd_, sizeof(sockadd_)) == -1)
-        std::cout << "unkown error,give over!" << std::endl;
+    if (bind(s_socket, (struct sockaddr *) &sockadd_, sizeof(sockadd_)) == -1){
+        std::cout << "2unkown error,give over!" << std::endl;
         _close();
+    }
+
     _listen();
 }
 
 void serviceSocket::_listen() {
-    if (listen(s_socket, 5) == -1)
-        std::cout << "unkown error,give over!" << std::endl;
+    if (listen(s_socket, 5) == -1){
+        std::cout << "3unkown error,give over!" << std::endl;
         _close();
+    }
+
     RunSocket();
 
 }
@@ -46,16 +50,20 @@ void serviceSocket::_listen() {
     int epoll_fd=epoll_create(512);
 
     if(epoll_fd<0)
-        std::cout << "unkown error,give over!" << std::endl;
+    {
+        std::cout << "4unkown error,give over!" << std::endl;
         _close();
+    }
 
     struct epoll_event _eve;
     struct epoll_event _ret_ev[MAX_POLL];
     _eve.events=EPOLLIN;
     _eve.data.fd=s_socket;
     if(epoll_ctl(epoll_fd,EPOLL_CTL_ADD,s_socket,&_eve)<0)
-        std::cout << "unkown error,give over!" << std::endl;
+    {
+        std::cout << "5unkown error,give over!" << std::endl;
         _close();
+    }
 
     struct sockaddr_in client;
     socklen_t on_len=sizeof(client);
@@ -70,7 +78,7 @@ void serviceSocket::_listen() {
                 //新加入请求处理
                 int n_sock=accept(_ret_ev[i].data.fd,(struct sockaddr*)&client,&on_len);
                 if(n_sock<0){
-                    std::cout << "unkown error,give over!" << std::endl;
+                    std::cout << "6unkown error,give over!" << std::endl;
                     _close();
                     close(_sock_fd);
                 }
@@ -93,12 +101,12 @@ int serviceSocket::set_no_block(int _fd) {
     int old_fl=fcntl(_fd,F_GETFL);
     if(old_fl<0)
     {
-        std::cout << "unkown error,give over!" << std::endl;
+        std::cout << "7unkown error,give over!" << std::endl;
         return -1;
     }
     if(fcntl(_fd,F_SETFL,old_fl|O_NONBLOCK))
     {
-        std::cout << "unkown error,give over!" << std::endl;
+        std::cout << "8unkown error,give over!" << std::endl;
         return -1;
     }
     return 0;

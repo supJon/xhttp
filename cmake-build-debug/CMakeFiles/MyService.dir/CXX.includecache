@@ -6,10 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/jon/CLionProjects/MyService/main.cpp
+/home/jon/CLionProjects/MyService/src/serivceSocket.cpp
 iostream
 -
-src/serviceSocket.h
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+sys/epoll.h
+-
+fcntl.h
+-
+serviceSocket.h
 /home/jon/CLionProjects/MyService/src/serviceSocket.h
 
 /home/jon/CLionProjects/MyService/src/serviceSocket.h
