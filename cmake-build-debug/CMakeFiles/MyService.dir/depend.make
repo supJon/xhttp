@@ -4,6 +4,10 @@
 CMakeFiles/MyService.dir/main.cpp.o: ../main.cpp
 CMakeFiles/MyService.dir/main.cpp.o: ../src/serviceSocket.h
 
+CMakeFiles/MyService.dir/src/httpAgree.cpp.o: ../src/httpAgree.cpp
+CMakeFiles/MyService.dir/src/httpAgree.cpp.o: ../src/httpAgree.h
+
+CMakeFiles/MyService.dir/src/serivceSocket.cpp.o: ../src/httpAgree.h
 CMakeFiles/MyService.dir/src/serivceSocket.cpp.o: ../src/serivceSocket.cpp
 CMakeFiles/MyService.dir/src/serivceSocket.cpp.o: ../src/serviceSocket.h
 

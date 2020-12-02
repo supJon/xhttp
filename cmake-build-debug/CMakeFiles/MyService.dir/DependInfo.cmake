@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jon/CLionProjects/MyService/main.cpp" "/home/jon/CLionProjects/MyService/cmake-build-debug/CMakeFiles/MyService.dir/main.cpp.o"
+  "/home/jon/CLionProjects/MyService/src/httpAgree.cpp" "/home/jon/CLionProjects/MyService/cmake-build-debug/CMakeFiles/MyService.dir/src/httpAgree.cpp.o"
   "/home/jon/CLionProjects/MyService/src/serivceSocket.cpp" "/home/jon/CLionProjects/MyService/cmake-build-debug/CMakeFiles/MyService.dir/src/serivceSocket.cpp.o"
   "/home/jon/CLionProjects/MyService/src/threadPool.cpp" "/home/jon/CLionProjects/MyService/cmake-build-debug/CMakeFiles/MyService.dir/src/threadPool.cpp.o"
   )

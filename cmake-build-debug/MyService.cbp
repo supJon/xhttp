@@ -85,6 +85,12 @@
 		<Unit filename="/home/jon/CLionProjects/MyService/main.cpp">
 			<Option target="MyService"/>
 		</Unit>
+		<Unit filename="/home/jon/CLionProjects/MyService/src/httpAgree.cpp">
+			<Option target="MyService"/>
+		</Unit>
+		<Unit filename="/home/jon/CLionProjects/MyService/src/httpAgree.h">
+			<Option target="MyService"/>
+		</Unit>
 		<Unit filename="/home/jon/CLionProjects/MyService/src/serivceSocket.cpp">
 			<Option target="MyService"/>
 		</Unit>

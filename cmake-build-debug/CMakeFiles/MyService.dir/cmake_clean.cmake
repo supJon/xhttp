@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyService.dir/main.cpp.o"
+  "CMakeFiles/MyService.dir/src/httpAgree.cpp.o"
   "CMakeFiles/MyService.dir/src/serivceSocket.cpp.o"
   "CMakeFiles/MyService.dir/src/threadPool.cpp.o"
   "MyService"

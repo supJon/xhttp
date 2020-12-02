@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyService.dir/build.make CMakeFiles/MyService.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/httpAgree.o: src/httpAgree.cpp.o
+
+.PHONY : src/httpAgree.o
+
+# target to build an object file
+src/httpAgree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyService.dir/build.make CMakeFiles/MyService.dir/src/httpAgree.cpp.o
+.PHONY : src/httpAgree.cpp.o
+
+src/httpAgree.i: src/httpAgree.cpp.i
+
+.PHONY : src/httpAgree.i
+
+# target to preprocess a source file
+src/httpAgree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyService.dir/build.make CMakeFiles/MyService.dir/src/httpAgree.cpp.i
+.PHONY : src/httpAgree.cpp.i
+
+src/httpAgree.s: src/httpAgree.cpp.s
+
+.PHONY : src/httpAgree.s
+
+# target to generate assembly for a file
+src/httpAgree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyService.dir/build.make CMakeFiles/MyService.dir/src/httpAgree.cpp.s
+.PHONY : src/httpAgree.cpp.s
+
 src/serivceSocket.o: src/serivceSocket.cpp.o
 
 .PHONY : src/serivceSocket.o
@@ -236,6 +263,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/httpAgree.o"
+	@echo "... src/httpAgree.i"
+	@echo "... src/httpAgree.s"
 	@echo "... src/serivceSocket.o"
 	@echo "... src/serivceSocket.i"
 	@echo "... src/serivceSocket.s"

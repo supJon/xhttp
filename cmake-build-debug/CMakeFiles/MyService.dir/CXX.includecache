@@ -6,21 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jon/CLionProjects/MyService/src/serivceSocket.cpp
+/home/jon/CLionProjects/MyService/src/httpAgree.cpp
 iostream
+-
+cstring
 -
 sys/socket.h
 -
-netinet/in.h
--
-unistd.h
--
-sys/epoll.h
--
-fcntl.h
--
-serviceSocket.h
-/home/jon/CLionProjects/MyService/src/serviceSocket.h
+httpAgree.h
+/home/jon/CLionProjects/MyService/src/httpAgree.h
 
-/home/jon/CLionProjects/MyService/src/serviceSocket.h
+/home/jon/CLionProjects/MyService/src/httpAgree.h
 

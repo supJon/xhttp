@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
-add_executable(MyService main.cpp src/threadPool.cpp src/serviceSocket.h src/serivceSocket.cpp)
+add_executable(MyService main.cpp src/threadPool.cpp src/serviceSocket.h src/serivceSocket.cpp src/httpAgree.h src/httpAgree.cpp)
 
 #include_directories(/home/jon/CLionProjects/MyService/src)
 

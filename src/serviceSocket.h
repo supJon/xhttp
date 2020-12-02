@@ -18,6 +18,8 @@ public:
     [[noreturn]] void RunSocket();
     void add_sock_fd(int _epoll_fd, int _fd, bool _enable_ );
     int set_no_block(int _fd);
+    void test();
+
     ~serviceSocket();
 private:
 
