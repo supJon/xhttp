@@ -96,7 +96,7 @@ void serviceSocket::_listen() {
                 int _fd_ = _ret_ev[i].data.fd;
 
                 std::cout << "++++++++++++++++++++++" << std::endl;
-
+                httpx._http_request(n_sock);
                 //
             } else {
                 //原有socket请求处理
